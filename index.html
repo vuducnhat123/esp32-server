@@ -209,7 +209,8 @@
         function fetchData() {
 
             //fetch('http://192.168.0.101:3000/data')
-            fetch('https://esp32-server-xxxx.onrender.com/data')
+            
+            fetch('https://esp32-server-bume.onrender.com/data') // gọi API từ server
                 .then(response => response.json())  // để hiểu được định dạng JSON từ server
                 .then(data => { // khi có data, cập nhật vào HTML
                     console.log('Data received:', data); // kiểm tra data nhận được
